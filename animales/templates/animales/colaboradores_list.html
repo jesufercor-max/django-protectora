@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colaboladores</title>
+</head>
+<body>
+    <h1>Colaboradores</h1>
+<ul>
+  {% for colaborador in colaboradores %}
+  <article>
+      <li>
+      <p>Colabolador: {{ colaborador.nombre }}</p>
+      <p>Cargo: {{ colaborador.cargo }}</p>
+      <p>Fecha de entrada: {{ colaborador.fecha_entrada_protectora }}</p>
+      </li>
+    </article>
+  {% endfor %}
+</ul>
+</body>
+</html>
